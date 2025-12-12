@@ -1,5 +1,4 @@
 import { GraduationCap, UserCircle, Shield } from 'lucide-react';
-import logo from 'figma:asset/ced4219b005b27773a5371dc3ece758afd16cb83.png';
 
 type WelcomeProps = {
   onStudentLogin: () => void;
@@ -12,7 +11,9 @@ export function Welcome({ onStudentLogin, onAdminLogin }: WelcomeProps) {
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <div className="inline-flex items-center justify-center mb-4">
-            <img src={logo} alt="Campus Plus Logo" className="h-32 w-auto" />
+            <div className="w-24 h-24 bg-gradient-to-br from-blue-400 to-purple-500 rounded-3xl flex items-center justify-center shadow-2xl">
+              <GraduationCap className="w-14 h-14 text-white" />
+            </div>
           </div>
           <h1 className="text-white mb-2">
             Campus + Project
